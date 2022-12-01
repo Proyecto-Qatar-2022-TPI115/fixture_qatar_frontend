@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="content">
         <h1>Barra de navegación</h1>
         <u>
             <li>
@@ -10,6 +10,9 @@
             </li>
             <li>
                 <router-link to="login">Login</router-link>
+            </li>
+            <li>
+                <router-link to="sign-up">Registrarse</router-link>
             </li>
             <li>
                 <router-link to="calendario">Calendario</router-link>
