@@ -17,6 +17,9 @@
                     <li class="nav-item">
                         <router-link class="nav-link" to="">Fase final</router-link>
                     </li>
+                    <li class="nav-item">
+                        <router-link class="nav-link" to="acercade">Acerca De</router-link>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perfil</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
@@ -32,9 +35,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li>
-                        <router-link to="acercade">Acerca De</router-link>
-                    </li>
+                    
                 </ul>
             </div>
         </div>
