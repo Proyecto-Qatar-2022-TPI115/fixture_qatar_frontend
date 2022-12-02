@@ -4,6 +4,8 @@ import Index from '../components/Index.vue'
 import Login from '../components/Login.vue'
 import Calendario from '../components/Calendario.vue'
 import AcercaDe from '../components/AcercaDe.vue'
+import CrearUsuario from '../components/CrearUsuario.vue'
+import Clasificaciones from '../components/Clasificaciones.vue'
 
 const routes = [
     {
@@ -25,6 +27,16 @@ const routes = [
         name: 'Calendario',
         path: '/calendario',
         component: Calendario
+    },
+    {
+        name: 'CrearUsuario',
+        path: '/sign-up',
+        component: CrearUsuario
+    },
+    {
+        name: 'Clasificaciones',
+        path: '/clasificaciones',
+        component: Clasificaciones
     },
     {
         name: 'AcercaDe',
