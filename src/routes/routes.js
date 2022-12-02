@@ -3,6 +3,7 @@ import Goleadores from '../components/Goleadores.vue'
 import Index from '../components/Index.vue'
 import Login from '../components/Login.vue'
 import Calendario from '../components/Calendario.vue'
+import AcercaDe from '../components/AcercaDe.vue'
 
 const routes = [
     {
@@ -24,6 +25,11 @@ const routes = [
         name: 'Calendario',
         path: '/calendario',
         component: Calendario
+    },
+    {
+        name: 'AcercaDe',
+        path: '/acercade',
+        component: AcercaDe
     }
 ]
 

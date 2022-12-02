@@ -14,6 +14,9 @@
             <li>
                 <router-link to="calendario">Calendario</router-link>
             </li>
+            <li>
+                <router-link to="acercade">Acerca De</router-link>
+            </li>
         </u>
     </div>
 </template>
