@@ -6,6 +6,8 @@ import Calendario from '../components/Calendario.vue'
 import AcercaDe from '../components/AcercaDe.vue'
 import CrearUsuario from '../components/CrearUsuario.vue'
 import Clasificaciones from '../components/Clasificaciones.vue'
+import PantallaPerfil from '../components/PantallaPerfil.vue'
+import EditarPerfil from '../components/EditarPerfil.vue'
 
 const routes = [
     {
@@ -42,6 +44,16 @@ const routes = [
         name: 'AcercaDe',
         path: '/acercade',
         component: AcercaDe
+    },
+    {
+        name: 'PantallaPerfil',
+        path: '/pantallaperfil',
+        component: PantallaPerfil
+    },
+    {
+        name: 'EditarPerfil',
+        path: '/editarperfil',
+        component: EditarPerfil
     }
 ]
 

@@ -24,10 +24,10 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perfil</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <li>
-                                <router-link class="dropdown-item" to="">Perfil</router-link>
+                                <router-link class="dropdown-item" to="pantallaperfil">Perfil</router-link>
                             </li>
                             <li>
-                                <router-link class="dropdown-item" to="">Editar perfil</router-link>
+                                <router-link class="dropdown-item" to="editarperfil">Editar perfil</router-link>
                             </li>
                             <li><hr class="dropdown-divider" /></li>
                             <li>
