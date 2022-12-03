@@ -24,6 +24,9 @@
                         <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perfil</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <li>
+                                <router-link class="dropdown-item" to="Login">Iniciar Sesion</router-link>
+                            </li>
+                            <li>
                                 <router-link class="dropdown-item" to="pantallaperfil">Perfil</router-link>
                             </li>
                             <li>
