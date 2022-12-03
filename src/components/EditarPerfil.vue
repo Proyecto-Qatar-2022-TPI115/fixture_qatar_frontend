@@ -20,17 +20,19 @@
                     </div>
                     <div class="input-group mb-3" >
                         <span class="input-group-text" id="selecciones">Selecciones favoritas:</span>
-                        <select class="form-select-lg" id="seleccionesSelect" >                       
-                                <option v-for="pais in paises" :key="paises.nombre">{{pais.nombre}}</option>
+                        <select class="form-select-lg" id="seleccionesSelect" v-model="selectFavorito" @change="agregarFavorito"> 
+                                <option value="">Seleccione</option>                      
+                                <option class="opciones" id="opciones" v-for="pais in paises" :key="paises.nombre" >{{pais.nombre}}</option>
                         </select>
-                        <textarea class="form-floating" id="seleccionesText"></textarea>
+                        <textarea class="form-floating" id="seleccionesText" v-model="seleccionesText" ></textarea>
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="pronostico">Pronostico del campeón:</span>
-                        <select class="form-select-lg" id="pronosticoSelect">
+                        <select class="form-select-lg" id="pronosticoSelect" v-model="selectPronostico" @change="agregarPronostico">
+                            <option value="">Seleccione</option>
                             <option  v-for="pais in paises" :key="paises.nombre">{{pais.nombre}}</option>
                         </select>
-                        <textarea class="form-floating" id="pronosticoText"></textarea>
+                        <textarea class="form-floating" id="pronosticoText" v-model="pronosticoText"></textarea>
                     </div>
                     <div class="input-group mb-3">
                         <span class="input-group-text" id="infoadicional">Información adicional:</span>
@@ -54,7 +56,11 @@
         data(){
             return{
                 paises:Array,
-                users:Array
+                users:Array,
+                selectFavorito:'',
+                seleccionesText:'',
+                selectPronostico:'',
+                pronosticoText:'',
             }
         },
         created(){
@@ -81,6 +87,12 @@
                 }).catch(error => {
                     console.log(error)
                 })
+            },
+            agregarFavorito(){
+                this.seleccionesText +=`${this.selectFavorito}-`;
+            },
+            agregarPronostico(){
+                this.pronosticoText += `${this.selectPronostico}-`;
             }
         },
     }
