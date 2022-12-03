@@ -1,9 +1,11 @@
 <template>
     <section class="form-login">
         <h5>Iniciar sesion</h5>
-        <input class="controls" type="text" name="User" value="" placeholder="Correo" >
-        <input class="controls" type="password" name="Password" value="" placeholder="password">
-        <input class="buttons" type="submit" name="" value="Acceder">
+        <form @submit.prevent="login">
+            <input class="controls" type="text" name="User" value="" placeholder="Correo" >
+            <input class="controls" type="password" name="Password" value="" placeholder="password">
+            <input class="buttons" type="submit" name="" value="Acceder">
+        </form>
         <p><a href="#">olvide la contra</a> </p>
         <p><a href="#">Crear una cuenta </a> </p>
     </section>
@@ -17,7 +19,7 @@ export default {
     data() {
     },
     created() {
-        this.login()
+        //this.login()
     },
     methods: {
         async login() {
@@ -27,8 +29,11 @@ export default {
                 password: 'admin',
                 token: ""
             })
-                .then(function (response) {
-                    console.log(response);
+            .then(response => {
+                console.log(response);
+            })
+            .catch(error => {
+                    console.log(error)
                 })
         }
     },
