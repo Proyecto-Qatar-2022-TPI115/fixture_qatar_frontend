@@ -1,7 +1,7 @@
 <template>
     
   <div class="iconoImagen">
-    <img
+    <img class="mt-5"
       src="https://www.giztab.com/wp-content/uploads/2022/05/Mundial-Qatar-2022-donde-ver-los-partidos-de-futbol-en-internet.jpg"
       style="width: 600px"
     />
