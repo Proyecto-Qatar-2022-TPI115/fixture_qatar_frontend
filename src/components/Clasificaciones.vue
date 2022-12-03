@@ -1,5 +1,12 @@
 <template>
-    
+  <div>
+    <nav class="navbar navbar-expand-lg mt-2">
+        <div class="position-absolute top-0 end-0">
+          <router-link class="btn btn-outline-danger me-2" to="login">Iniciar sesión</router-link>
+          <router-link class="btn btn-outline-danger" to="sign-up">Registrarse</router-link>
+        </div>
+    </nav>
+  </div>
   <div class="iconoImagen">
     <img class="mt-5"
       src="https://www.giztab.com/wp-content/uploads/2022/05/Mundial-Qatar-2022-donde-ver-los-partidos-de-futbol-en-internet.jpg"
@@ -180,13 +187,13 @@ export default {
   }, 
   methods: {
       async getClasificacion() {
-          let url = 'http://fixture_qatar_backend.test/api/tabla-posiciones'
-          await axios.get(url).then(response =>{
-              this.clasificaciones = response.data
-              console.log(this.clasificaciones)
-          }).catch(error => {
-              console.log(error)
-          })
+        let url = 'http://fixture_qatar_backend.test/api/tabla-posiciones'
+        await axios.get(url).then(response =>{
+            this.clasificaciones = response.data
+            console.log(this.clasificaciones)
+        }).catch(error => {
+            console.log(error)
+        })
       }
   },
   mounted() {

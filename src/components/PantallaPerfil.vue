@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container mt-5">
         <div class="mb-6"></div>
         <div class="row justify-content-center">
             <div class="col-2">
@@ -14,7 +14,7 @@
             <div class="col-7" >
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="nombre">Nombre:</span>
-                    <input type="text" class="form-control" id="nombreText" v-bind:placeholder="users.nombre" disabled>
+                    <input value="" type="text" class="form-control" id="nombreText" v-bind:placeholder="users.nombre" disabled>
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="nombre">Apellido:</span>
@@ -47,7 +47,8 @@
         name: 'PantallaPerfil',
         data(){
             return{
-                users: Array
+                users: Array,
+                id: localStorage.getItem('user')
             }
 
         },
@@ -56,8 +57,13 @@
         },
         methods:{
             async getUsers(){
-                let url = 'http://fixture_qatar_backend.test/api/users/1'
-                await axios.get(url).then(response =>{
+                let url = 'http://fixture_qatar_backend.test/api/users/' + this.id
+                await axios.get(url, {
+                    headers: {
+                        Authorization: `Bearer ${localStorage.getItem('token')}`,
+                        Accept: 'application/json'
+                    }
+                }).then(response =>{
                     this.users = response.data.users
                     console.log(this.users)
                     console.log(this.users.nombre)

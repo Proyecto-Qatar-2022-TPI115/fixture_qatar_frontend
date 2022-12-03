@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-2">
                 <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoTlod0Ezhx9TL8p365Q7iGmG_EqwaWcJ_Ot-S6vhxLgqax_Z72ryWMUEQ5SWahwIgkWywgiD21LwRqkoU9eg-5v8mjPYwi8u6rsIJnYnq4u2Grxr7B9rBwMVJE82vZVvZi8Z-Y4SfPGM2n9oBB1FZDxXa2ST5ywafBpMlI1EWiSEYdVsjMusCML9X/s1600/Qatar2022256x.png" class="img-thumbnail" >

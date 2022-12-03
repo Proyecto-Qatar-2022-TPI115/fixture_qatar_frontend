@@ -23,7 +23,9 @@
                 </p>
                 <div class="dbotones">
                     <input type="submit" value=" Aceptar " />
-                    <input type="submit" value=" Rechazar " />
+                    <router-link to="/">
+                        <input type="submit" value=" Rechazar " />
+                    </router-link>
                 </div>
             </div>
             <br />
@@ -68,6 +70,7 @@ export default {
                 console.log(this.token);
             })
 
+            this.$router.push('/')
         }
     }
 }

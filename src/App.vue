@@ -1,5 +1,5 @@
 <template>
-  <Header title="Qatar 2022"/>
+  <Header v-if="isLogin" titulo="Qatar 2022"/>
   <router-view></router-view>
 </template>
 
@@ -10,6 +10,11 @@ export default {
   name: 'App',
   components: {
     Header,
+  },
+  data() {
+    return {
+      isLogin: true
+    }
   }
 }
 </script>

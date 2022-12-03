@@ -13,7 +13,7 @@ const routes = [
     {
         name: 'index',
         path: '/',
-        component: Index
+        component: Clasificaciones
     },
     {
         name: 'Goleadores',
