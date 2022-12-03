@@ -199,6 +199,21 @@ export default {
 table{
 border-style: solid;
 border-color: #9C254D;
+border-collapse: collapse;
+}
+
+table tr:nth-child(2) {
+
+	background-color: rgb(130, 243, 167);
+
+}
+table tr:nth-child(3) {
+
+	background-color: rgb(130, 243, 167);
+}
+
+th{
+  border-bottom: 1px solid rgb(247, 8, 8);
 }
 
 #base{
@@ -229,6 +244,7 @@ background: rgb(233, 130, 130);
 
 H2{
   text-align: center;
+
 }
 
 .subirImagen{
