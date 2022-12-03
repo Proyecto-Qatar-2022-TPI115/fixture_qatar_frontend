@@ -5,11 +5,13 @@
 
 <script>
 import Header from './components/Header.vue'
+import fase_final from './components/fase_final.vue';
 
 export default {
   name: 'App',
   components: {
     Header,
+    fase_final
   }
 }
 </script>

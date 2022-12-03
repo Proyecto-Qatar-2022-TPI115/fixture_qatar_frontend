@@ -55,11 +55,6 @@ const routes = [
         name: 'EditarPerfil',
         path: '/editarperfil',
         component: EditarPerfil
-    },
-    {
-        name: 'FaseFinal',
-        path: '/fasefinal',
-        component: FaseFinal
     }
 ]
 
