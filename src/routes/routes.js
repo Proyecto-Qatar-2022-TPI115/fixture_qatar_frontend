@@ -8,6 +8,7 @@ import CrearUsuario from '../components/CrearUsuario.vue'
 import Clasificaciones from '../components/Clasificaciones.vue'
 import PantallaPerfil from '../components/PantallaPerfil.vue'
 import EditarPerfil from '../components/EditarPerfil.vue'
+import FaseFinal from '../components/FaseFinal.vue'
 
 const routes = [
     {
@@ -54,6 +55,11 @@ const routes = [
         name: 'EditarPerfil',
         path: '/editarperfil',
         component: EditarPerfil
+    },
+    {
+        name: 'FaseFinal',
+        path: '/fasefinal',
+        component: FaseFinal
     }
 ]
 
