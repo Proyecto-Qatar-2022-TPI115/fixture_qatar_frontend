@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="mb-5"></div>
+        <div class="mb-6"></div>
         <div class="row justify-content-center">
             <div class="col-2">
                 <div class="mb-3">
