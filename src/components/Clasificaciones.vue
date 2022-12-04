@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar navbar-expand-lg mt-2">
+    <nav v-if="login == null" class="navbar navbar-expand-lg mt-2">
         <div class="position-absolute top-0 end-0">
           <router-link class="btn btn-outline-danger me-2" to="login">Iniciar sesión</router-link>
           <router-link class="btn btn-outline-danger" to="sign-up">Registrarse</router-link>
@@ -179,7 +179,8 @@ export default {
   name: 'Clasificaciones',
   data() {
       return {
-          clasificaciones: Array
+          clasificaciones: Array,
+          login: localStorage.getItem('status')
       }
   },
   created() {
@@ -194,11 +195,8 @@ export default {
         }).catch(error => {
             console.log(error)
         })
-      }
+      },
   },
-  mounted() {
-
-  }
 }
 </script>
 

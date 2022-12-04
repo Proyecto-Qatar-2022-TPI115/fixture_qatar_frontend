@@ -66,10 +66,14 @@ export default {
                 password: this.password
             })
             .then(response => {
-                this.token = response.data.token
-                console.log(this.token);
+                console.log(response)
+                localStorage.setItem('status', true)
+                localStorage.setItem('token', response.data.token)
+                localStorage.setItem('user', response.data.user.id)
             })
-
+            .catch(error => {
+                console.log(error)
+            })
             this.$router.push('/')
         }
     }

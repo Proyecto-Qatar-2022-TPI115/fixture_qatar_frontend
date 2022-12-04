@@ -1,5 +1,5 @@
 <template>
-  <Header v-if="isLogin" titulo="Qatar 2022"/>
+  <Header titulo="Qatar 2022"/>
   <router-view></router-view>
 </template>
 
@@ -13,7 +13,7 @@ export default {
   },
   data() {
     return {
-      isLogin: true
+      
     }
   }
 }

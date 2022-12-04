@@ -13,6 +13,7 @@
 
 <script>
 import axios from 'axios'
+import Clasificaciones from '../components/Clasificaciones.vue'
 
 export default {
     name: 'Login',
@@ -22,6 +23,9 @@ export default {
             password: "",
             token: "",
         }
+    },
+    components: {
+        Clasificaciones
     },
     created() {
     },
@@ -34,6 +38,9 @@ export default {
             })
             .then(response => {
                 console.log(response);
+                localStorage.setItem('status', true)
+                localStorage.setItem('token', response.data.token)
+                localStorage.setItem('user', response.data.user.id)
             })
             .catch(error => {
                     console.log(error)

@@ -23,7 +23,7 @@
                         <router-link class="nav-link" to="acercade">Acerca De</router-link>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perfil</a>
+                        <a v-if="login == 'true'" class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Perfil</a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                             <li>
                                 <router-link class="dropdown-item" to="pantallaperfil">Ver perfil</router-link>
@@ -33,7 +33,7 @@
                             </li>
                             <li><hr class="dropdown-divider" /></li>
                             <li>
-                                <a class="dropdown-item">Cerrar Sesion</a>
+                                <a v-on:click="logout" class="dropdown-item">Cerrar Sesion</a>
                             </li>
                         </ul>
                     </li>
@@ -47,9 +47,23 @@
 <script>
 export default {
         name: 'Header',
+        data() {
+            return {
+                login: localStorage.getItem('status')
+            }
+        },
         props: {
             title: String
-        }
+        },
+        methods: {
+            logout() {
+                localStorage.clear()
+                this.$router.go(0)
+            },
+            refresh() {
+                this.$router.go(0)
+            }
+        },
     }
 </script>
 

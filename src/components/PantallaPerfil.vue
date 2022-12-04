@@ -48,12 +48,14 @@
         data(){
             return{
                 users: Array,
-                id: localStorage.getItem('user')
+                id: localStorage.getItem('user'),
+                perfil: Array,
             }
 
         },
         created(){
             this.getUsers()
+            this.getPerfil()
         },
         methods:{
             async getUsers(){
@@ -66,7 +68,20 @@
                 }).then(response =>{
                     this.users = response.data.users
                     console.log(this.users)
-                    console.log(this.users.nombre)
+                }).catch(error => {
+                    console.log(error)
+                })
+            },
+            async getPerfil() {
+                let url = 'http://fixture_qatar_backend.test/api/perfiles/' + this.id
+                await axios.get(url, {
+                    headers: {
+                        Authorization: `Bearer ${localStorage.getItem('token')}`,
+                        Accept: 'application/json'
+                    }
+                }).then(response =>{
+                    this.perfil = response.data.perfiles
+                    console.log(this.perfil)
                 }).catch(error => {
                     console.log(error)
                 })
