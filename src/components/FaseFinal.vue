@@ -1,15 +1,15 @@
 <template>
     <div class="container-fluid">
-        <table class="tablafinal">
+        <table class="tabla">
                     <thead>
                     <tr>
-                        <th colspan="3">OCTAVOS</th>
-                        <th colspan="3">CUARTOS</th>
-                        <th colspan="3">SEMIFINAL</th>
-                        <th colspan="6">FINAL</th>
-                        <th colspan="3">SEMIFINAL</th>
-                        <th colspan="3">CUARTOS</th>
-                        <th colspan="3">OCTAVOS</th>
+                        <th class="titulo" colspan="3">OCTAVOS</th>
+                        <th class="titulo" colspan="3">CUARTOS</th>
+                        <th class="titulo" colspan="3">SEMIFINAL</th>
+                        <th class="titulo" colspan="6">FINAL</th>
+                        <th class="titulo" colspan="3">SEMIFINAL</th>
+                        <th class="titulo" colspan="3">CUARTOS</th>
+                        <th class="titulo" colspan="3">OCTAVOS</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -210,5 +210,5 @@
     
 </script>
 <style scoped>
-    @import '../assets/css/estilos.css';
+    @import '../assets/css/tabla.css';
 </style>
