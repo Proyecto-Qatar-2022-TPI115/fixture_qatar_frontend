@@ -55,3 +55,8 @@ export default {
         },
 }
 </script>
+
+</script>
+<style scoped>
+    @import '../assets/css/Partidos.css';
+</style>
