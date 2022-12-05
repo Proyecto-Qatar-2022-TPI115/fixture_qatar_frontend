@@ -14,17 +14,20 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td v-for = "(fase_final) in fase_final.slice(0,1)">{{fase_final.nombre}}</td>
-                        <td>A1</td>
-                        <td>#</td>
+                        <!-- PAISES BAJOS -->
+                        <td v-for = "(fase_final) in fase_final.slice(0,1)" :key="fase_final.id">{{fase_final.nombre}}</td>
+                        <td>3</td>
+                        <td>0</td>
                         <td colspan="18"></td>
                         <td>#</td>
-                        <td>B1</td>
-                        <td v-for = "(fase_final) in fase_final.slice(4,5)">{{fase_final.nombre}}</td>
+                        <td>#</td>
+                        <!-- INGLATERRA -->
+                        <td v-for = "(fase_final) in fase_final.slice(4,5)" :key="fase_final.id">{{fase_final.nombre}}</td>
                     </tr>
                     <tr>
                         <td colspan="3"></td>
-                        <td>A1</td>
+                        <!-- PAISES BAJOS -->
+                        <td v-for = "(fase_final) in fase_final.slice(0,1)" :key="fase_final.id">{{fase_final.nombre}}</td>
                         <td>#</td>
                         <td>#</td>
                         <td colspan="12"></td>
@@ -33,13 +36,15 @@
                         <td>B1</td>
                     </tr>
                     <tr>
-                        <td v-for="(fase_final) in fase_final.slice(5,6)">{{fase_final.nombre}}</td>
-                        <td>B2</td>
-                        <td>#</td>
+                        <!-- ESTADOS UNIDOS -->
+                        <td v-for="(fase_final) in fase_final.slice(5,6)" :key="fase_final.id">{{fase_final.nombre}}</td>
+                        <td>1</td>
+                        <td>0</td>
                         <td colspan="18"></td>
                         <td>#</td>
-                        <td>A2</td>
-                        <td v-for="(fase_final) in fase_final.slice(1,2)">{{fase_final.nombre}}</td>
+                        <td>#</td>
+                        <!-- SENEGAL -->
+                        <td v-for="(fase_final) in fase_final.slice(1,2)" :key="fase_final.id">{{fase_final.nombre}}</td>
                     </tr>
                     <tr>
                         <td colspan="3"></td>
@@ -58,32 +63,38 @@
                         <td colspan="3"></td>
                     </tr>
                     <tr>
-                        <td v-for="(fase_final) in fase_final.slice(8,9)">{{fase_final.nombre}}</td>
-                        <td>C1</td>
-                        <td>#</td>
+                        <!-- ARGENTINA -->
+                        <td v-for="(fase_final) in fase_final.slice(8,9)" :key="fase_final.id">{{fase_final.nombre}}</td>
+                        <td>2</td>
+                        <td>0</td>
                         <td colspan="18"></td>
-                        <td>#</td>
-                        <td>D1</td>
-                        <td v-for="(fase_final) in fase_final.slice(12,13)">{{fase_final.nombre}}</td>
+                        <td>0</td>
+                        <td>3</td>
+                        <!-- FRANCIA -->
+                        <td v-for="(fase_final) in fase_final.slice(12,13)" :key="fase_final.id">{{fase_final.nombre}}</td>
                     </tr>
                     <tr>
                         <td colspan="3"></td>
-                        <td>C1</td>
+                        <!-- ARGENTINA -->
+                        <td v-for="(fase_final) in fase_final.slice(8,9)" :key="fase_final.id">{{fase_final.nombre}}</td>
                         <td>#</td>
                         <td>#</td>
                         <td colspan="12"></td>
                         <td>#</td>
                         <td>#</td>
-                        <td>D1</td>
+                        <!-- FRANCIA -->
+                        <td v-for="(fase_final) in fase_final.slice(12,13)" :key="fase_final.id">{{fase_final.nombre}}</td>
                     </tr>
                     <tr>
-                        <td v-for="(fase_final) in fase_final.slice(13,14)">{{fase_final.nombre}}</td>
-                        <td>D2</td>
-                        <td>#</td>
+                        <!-- AUSTRALIA -->
+                        <td v-for="(fase_final) in fase_final.slice(13,14)" :key="fase_final.id">{{fase_final.nombre}}</td>
+                        <td>1</td>
+                        <td>0</td>
                         <td colspan="18"></td>
-                        <td>#</td>
-                        <td>C2</td>
-                        <td v-for="(fase_final) in fase_final.slice(9,10)">{{fase_final.nombre}}</td>
+                        <td>0</td>
+                        <td>1</td>
+                        <!-- POLONIA -->
+                        <td v-for="(fase_final) in fase_final.slice(9,10)" :key="fase_final.id">{{fase_final.nombre}}</td>
                     </tr>
                     <tr>
                         <td colspan="3"></td>
@@ -101,13 +112,15 @@
                         <td colspan="3"></td>
                     </tr>
                     <tr>
-                        <td v-for="(fase_final) in fase_final.slice(16,17)">{{fase_final.nombre}}</td>
-                        <td>E1</td>
+                        <!-- JAPÓN -->
+                        <td v-for="(fase_final) in fase_final.slice(16,17)" :key="fase_final.id">{{fase_final.nombre}}</td>
+                        <td>#</td>
                         <td>#</td>
                         <td colspan="18"></td>
                         <td>#</td>
-                        <td>F1</td>
-                        <td v-for="(fase_final) in fase_final.slice(20,21)">{{fase_final.nombre}}</td>
+                        <td>#</td>
+                        <!-- MARRUECOS -->
+                        <td v-for="(fase_final) in fase_final.slice(20,21)" :key="fase_final.id">{{fase_final.nombre}}</td>
                     </tr>
                     <tr>
                         <td colspan="3"></td>
@@ -120,13 +133,15 @@
                         <td>E2</td>
                     </tr>
                     <tr>
-                        <td v-for="(fase_final) in fase_final.slice(21,22)">{{fase_final.nombre}}</td>
-                        <td>F2</td>
+                        <!-- CROACIA -->
+                        <td v-for="(fase_final) in fase_final.slice(21,22)" :key="fase_final.id">{{fase_final.nombre}}</td>
+                        <td>#</td>
                         <td>#</td>
                         <td colspan="18"></td>
                         <td>#</td>
-                        <td>E2</td>
-                        <td v-for="(fase_final) in fase_final.slice(17,18)">{{fase_final.nombre}}</td>
+                        <td>#</td>
+                        <!-- ESPAÑA -->
+                        <td v-for="(fase_final) in fase_final.slice(17,18)" :key="fase_final.id">{{fase_final.nombre}}</td>
                     </tr>
                     <tr>
                         <td colspan="3"></td>
@@ -145,13 +160,15 @@
                         <td colspan="3"></td>
                     </tr>
                     <tr>
-                        <td v-for="(fase_final) in fase_final.slice(24,25)">{{fase_final.nombre}}</td>
-                        <td>G1</td>
+                        <!-- BRASIL -->
+                        <td v-for="(fase_final) in fase_final.slice(24,25)" :key="fase_final.id">{{fase_final.nombre}}</td>
+                        <td>#</td>
                         <td>#</td>
                         <td colspan="18"></td>
                         <td>#</td>
-                        <td>H1</td>
-                        <td v-for="(fase_final) in fase_final.slice(28,29)">{{fase_final.nombre}}</td>
+                        <td>#</td>
+                        <!-- PORTUGAL -->
+                        <td v-for="(fase_final) in fase_final.slice(28,29)" :key="fase_final.id">{{fase_final.nombre}}</td>
                     </tr>
                     <tr>
                         <td colspan="3"></td>
@@ -164,13 +181,15 @@
                         <td>H1</td>
                     </tr>
                     <tr>
-                        <td v-for="(fase_final) in fase_final.slice(29,30)">{{fase_final.nombre}}</td>
-                        <td>H2</td>
+                        <!-- COREA DEL SUR -->
+                        <td v-for="(fase_final) in fase_final.slice(29,30)" :key="fase_final.id">{{fase_final.nombre}}</td>
+                        <td>#</td>
                         <td>#</td>
                         <td colspan="18"></td>
                         <td>#</td>
-                        <td>G2</td>
-                        <td v-for="(fase_final) in fase_final.slice(25,26)">{{fase_final.nombre}}</td>
+                        <td>#</td>
+                        <!-- SUIZA -->
+                        <td v-for="(fase_final) in fase_final.slice(25,26)" :key="fase_final.id">{{fase_final.nombre}}</td>
                     </tr>
                 </tbody>
             </table>

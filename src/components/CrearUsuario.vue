@@ -70,6 +70,7 @@ export default {
                 localStorage.setItem('status', true)
                 localStorage.setItem('token', response.data.token)
                 localStorage.setItem('user', response.data.user.id)
+                localStorage.setItem('perfil', response.data.perfil_id)
             })
             .catch(error => {
                 console.log(error)

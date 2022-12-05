@@ -17,7 +17,7 @@
                         <router-link class="nav-link" to="maximos-goleadores">Estadísticas</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link class="nav-link" to="">Fase final</router-link>
+                        <router-link class="nav-link" to="fasefinal">Fase final</router-link>
                     </li>
                     <li class="nav-item">
                         <router-link class="nav-link" to="acercade">Acerca De</router-link>

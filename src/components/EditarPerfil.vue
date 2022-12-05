@@ -64,6 +64,7 @@
                 selectPronostico:'',
                 pronosticoText:'',
                 id: localStorage.getItem('user'),
+                perfil_id: localStorage.getItem('perfil'),
                 informacion: '',
             }
         },
@@ -105,7 +106,7 @@
                 this.pronosticoText = `${this.selectPronostico}`;
             },
             async guardarPerfil() {
-                let url = 'http://fixture_qatar_backend.test/api/perfiles'
+                let url = 'http://fixture_qatar_backend.test/api/perfiles/' + this.perfil_id
                 
                 let paises = document.getElementById('seleccionesText').value
                 let array = paises.split(',')
@@ -113,7 +114,7 @@
 
                 console.log(array)
 
-                await axios.post(url, {
+                await axios.put(url, {
                     campeon_pais_id: this.selectPronostico,
                     favoritos: array,
                     informacion: this.informacion,

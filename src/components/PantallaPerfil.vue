@@ -49,6 +49,7 @@
             return{
                 users: Array,
                 id: localStorage.getItem('user'),
+                perfil_id: localStorage.getItem('perfil'),
                 perfil: Array,
             }
 
@@ -73,7 +74,7 @@
                 })
             },
             async getPerfil() {
-                let url = 'http://fixture_qatar_backend.test/api/perfiles/' + this.id
+                let url = 'http://fixture_qatar_backend.test/api/perfiles/' + this.perfil_id
                 await axios.get(url, {
                     headers: {
                         Authorization: `Bearer ${localStorage.getItem('token')}`,
