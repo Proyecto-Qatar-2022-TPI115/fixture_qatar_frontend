@@ -191,3 +191,6 @@
 
     
 </script>
+<style scoped>
+    @import '../assets/css/Goleadores.css';
+</style>
