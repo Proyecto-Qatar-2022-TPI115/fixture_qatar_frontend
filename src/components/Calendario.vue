@@ -32,7 +32,7 @@
 <script>
     import axios from 'axios'
 
-    /*export default {
+    export default {
         name: 'Calendario',
         data() {
                 return {
@@ -44,7 +44,7 @@
             }, 
             methods: {
                 async getCalendario() {
-                    let url = 'https://6308-190-62-20-113.ngrok.io/api/calendario'
+                    let url = 'http://fixture_qatar_backend.test/api/calendario'
                     await axios.get(url).then(response =>{
                         this.calendario = response.data.calendario
                         console.log(this.calendario)
@@ -53,32 +53,7 @@
                     })
                 }
             },
-    }*/
-    import {HTTP} from "../App.vue"
-
-    export default {
-            data() {
-                return {
-                    calendario: [],
-                    errors: [],
-                };
-            },
-    
-            // Pulls posts when the component is created.
-
-            created() {
-                HTTP
-                    .get('https://6308-190-62-20-113.ngrok.io/api/calendario')
-                    .then((response) => {
-                        // JSON responses are automatically parsed.
-                        this.calendario = response.data.calendario;
-                    })
-                    .catch((e) => {
-                        this.errors.push(e);
-                    });
-                    
-            }
-        };
+    }
         
 
 </script>

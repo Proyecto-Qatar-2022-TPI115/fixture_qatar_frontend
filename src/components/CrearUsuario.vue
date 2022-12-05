@@ -19,7 +19,7 @@
                 </p>
                 <p>
                     <label for="ipass">Contraseña</label>
-                    <input id="ipass " type="text" name=" nombre " v-model="password"/>
+                    <input id="ipass " type="password" name=" nombre " v-model="password"/>
                 </p>
                 <div class="dbotones">
                     <input type="submit" value=" Aceptar " />
@@ -28,14 +28,6 @@
                     </router-link>
                 </div>
             </div>
-            <br />
-            <div class="subirImagen">
-                <h2>Arrastra y suelta una imagen</h2>
-                <span>0</span>
-                <button>selecciona tus archivos</button>
-                <input type="file" id="input-file" hidden multiple />
-            </div>
-            <div id="preview"></div>
         </form>
     </body>
 </template>
@@ -75,7 +67,7 @@ export default {
             .catch(error => {
                 console.log(error)
             })
-            this.$router.push('/')
+            this.$router.push('/editarperfil')
         }
     }
 }
