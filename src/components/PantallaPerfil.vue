@@ -8,7 +8,7 @@
                     id="imagenPerfil" class="img-thumbnail">
                 </div>  
                 <div class="mb-3">
-                        <button type="button" class="btn btn-dark">Editar perfil</button>
+                        <router-link class="btn btn-dark" to="editarperfil">Editar Perfil</router-link>
                 </div>
             </div>
             <div class="col-7" >
@@ -21,20 +21,20 @@
                     <input type="text" class="form-control" id="nombreText" v-bind:placeholder="users.apellido" disabled>
                 </div>
                 <div class="input-group mb-3">
-                    <span class="input-group-text" id="nombre">Pais:</span>
-                    <input type="text" class="form-control" id="nombreText" v-bind:placeholder="users.email" disabled>
+                    <span class="input-group-text" id="nombre">Email:</span>
+                    <input type="email" class="form-control" id="nombreText" v-bind:placeholder="users.email" disabled>
                 </div>
                 <div class="input-group mb-3">
-                    <span class="input-group-text" id="nombre">Nickname:</span>
-                    <input type="text" class="form-control" id="nombreText" v-bind:placeholder="users.nickname" disabled>
+                    <span class="input-group-text" id="nombre">Información:</span>
+                    <input type="text" class="form-control" id="nombreText" v-bind:placeholder="perfil.informacion" disabled>
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="nombre">Seleciones favoritas:</span>
-                    <textarea class="form-floating" id="seleccionesText" disabled>{{users.apellido}}</textarea>
+                    <textarea class="form-floating" id="seleccionesText" v-for="elemento in favoritos" :key="favoritos.id" v-bind:value="paises[elemento-1].nombre" disabled></textarea>
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="nombre">Pronóstico de campeón:</span>
-                    <textarea class="form-floating" id="pronosticoText" disabled>{{users.email}}</textarea>
+                    <textarea class="form-floating" id="pronosticoText" v-bind:value="paises[perfil.campeon_pais_id-1].nombre" disabled></textarea>
                 </div>
             </div>
         </div>
@@ -51,12 +51,16 @@
                 id: localStorage.getItem('user'),
                 perfil_id: localStorage.getItem('perfil'),
                 perfil: Array,
+                paises: Array,
+                favoritos: Array,
+                favoritosText: '',
             }
 
         },
         created(){
             this.getUsers()
             this.getPerfil()
+            this.getPaises()
         },
         methods:{
             async getUsers(){
@@ -83,10 +87,21 @@
                 }).then(response =>{
                     this.perfil = response.data.perfiles
                     console.log(this.perfil)
+                    this.favoritos = this.perfil.favoritos
+                    console.log(this.favoritos)
                 }).catch(error => {
                     console.log(error)
                 })
-            }
+            },
+            async getPaises(){
+                let url = 'http://fixture_qatar_backend.test/api/paises'
+                await axios.get(url).then(response =>{
+                    this.paises = response.data.paises
+                }).catch(error => {
+                    console.log(error)
+                })
+            },
+
         },
     }
 </script>
