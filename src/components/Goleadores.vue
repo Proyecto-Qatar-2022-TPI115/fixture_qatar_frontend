@@ -61,14 +61,6 @@
             data-image-width="1080" data-image-height="1498">
         <img class="u-image u-image-round u-radius-30 u-image-5" src="images/a2fd9eb98dced8e6b5d4c957aac4db7e.jpg" alt=""
             data-image-width="918" data-image-height="1230">
-        <p class="u-large-text u-text u-text-variant u-text-3">Cristiano&nbsp;<b>Ronaldo</b>
-            <br>Nacimiento: Funchal, Madeira, Portugal 5 de febrero de 1985 (37 años)<br>País: Portugal<br>Nacionalidad(es):
-            Portuguesa<br>Altura:1,87 m (6′ 2″)
-        </p>
-        <p class="u-small-text u-text u-text-palette-5-base u-text-variant u-text-4">
-            <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-5-base u-btn-1"
-            href="https://nicepage.com">Mostrar Mas </a>
-        </p>
         </div>
     </section>
     </div>
@@ -132,15 +124,7 @@
         <img class="u-image u-image-round u-radius-29 u-image-4" src="images/E81NfY-XIAUXDg9.jpg" alt=""
             data-image-width="1080" data-image-height="1498">
         <img class="u-image u-image-round u-radius-30 u-image-5" src="images/a2fd9eb98dced8e6b5d4c957aac4db7e.jpg" alt=""
-            data-image-width="918" data-image-height="1230">
-        <p class="u-large-text u-text u-text-variant u-text-3">Cristiano&nbsp;<b>Ronaldo</b>
-            <br>Nacimiento: Funchal, Madeira, Portugal 5 de febrero de 1985 (37 años)<br>País: Portugal<br>Nacionalidad(es):
-            Portuguesa<br>Altura:1,87 m (6′ 2″)
-        </p>
-        <p class="u-small-text u-text u-text-palette-5-base u-text-variant u-text-4">
-            <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-5-base u-btn-1"
-            href="https://nicepage.com">Mostrar Mas </a>
-        </p>
+            data-image-width="918" data-image-height="1230">        
         </div>
     </section>
     </div>
@@ -188,9 +172,17 @@
         }
 
     }
-
-    
 </script>
 <style scoped>
     @import '../assets/css/Goleadores.css';
+</style>
+
+<style scoped>
+table tr:nth-child(2) {
+    background-color: rgba(3, 89, 195, 0.851);
+}
+table tr:nth-child(3) {
+
+	background-color: rgba(255, 255, 255, 0.27);
+}
 </style>
