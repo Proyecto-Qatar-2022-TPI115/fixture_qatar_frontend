@@ -28,9 +28,9 @@
                     <span class="input-group-text" id="nombre">Información:</span>
                     <input type="text" class="form-control" id="nombreText" v-bind:placeholder="perfil.informacion" disabled>
                 </div>
-                <div class="input-group mb-3">
+                <div class="input-group mb-3" >
                     <span class="input-group-text" id="nombre">Seleciones favoritas:</span>
-                    <textarea class="form-floating" id="seleccionesText" v-for="elemento in favoritos" :key="favoritos.id" v-bind:value="paises[elemento-1].nombre" disabled></textarea>
+                    <a><input v-for="elemento in favoritos" :key="elemento.id" class="form-control" id="seleccionesText" v-bind:value="paises[elemento-1].nombre" disabled></a>
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text" id="nombre">Pronóstico de campeón:</span>
@@ -97,6 +97,7 @@
                 let url = 'http://fixture_qatar_backend.test/api/paises'
                 await axios.get(url).then(response =>{
                     this.paises = response.data.paises
+                    console.log(this.paises)
                 }).catch(error => {
                     console.log(error)
                 })

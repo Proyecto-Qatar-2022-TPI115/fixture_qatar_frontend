@@ -41,7 +41,7 @@
                         </div>
                         <div class="input-group mb-3">
                             <button type="submit" class="btn btn-dark">Guardar</button>
-                            <button type="button" class="btn btn-danger">Cancelar</button>
+                            <router-link class="btn btn-danger" to="/">Cancelar</router-link>
                         </div>
                     </div>
                 </form>
