@@ -1,7 +1,7 @@
- .u-section-1 {
+ /*.u-section-1 {
   background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("images/Dfc8Y3LWkAAmuKg.jpg");
   background-position: 50% 50%;
-}
+}*/
 
 .u-section-1 .u-sheet-1 {
   min-height: 951px;
@@ -109,7 +109,7 @@
     width: 340px;
   }
 } .u-section-2 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("images/Dfc8Y3LWkAAmuKg.jpg");
+  background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55));
   background-position: 50% 50%;
 }
 
