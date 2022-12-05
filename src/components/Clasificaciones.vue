@@ -188,7 +188,7 @@ export default {
   }, 
   methods: {
       async getClasificacion() {
-        let url = 'http://fixture_qatar_backend.test/api/tabla-posiciones'
+        let url = 'https://d6fb-190-87-162-119.ngrok.io/api/tabla-posiciones'
         await axios.get(url).then(response =>{
             this.clasificaciones = response.data
             console.log(this.clasificaciones)
