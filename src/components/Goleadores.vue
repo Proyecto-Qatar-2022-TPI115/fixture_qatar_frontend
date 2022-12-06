@@ -152,7 +152,7 @@
             async getGoleadores() {
                 let url = 'https://jsonplaceholder.typicode.com/posts'
                 await axios.get(url).then(response =>{
-                    this.goleadores = response.data.goleadores
+                    this.goleadores = response.data//.goleadores
                     console.log(this.goleadores)
                 }).catch(error => {
                     console.log(error)
