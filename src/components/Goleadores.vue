@@ -40,13 +40,13 @@
             <tbody class="u-black u-table-body u-table-body-1">
                 <tr v-for="goleador in goleadores" :key="goleador.id" style="height: 140px;">
                     <th class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-6">
-                        <br>{{goleador.nombre}}
+                        <br>{{goleador.userId}}
                     </th>
                     <th class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-6">
-                        <br>{{goleador.apellido}}
+                        <br>{{goleador.id}}
                     </th>
-                    <th class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-7">{{goleador.pais}}</th>
-                    <th class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-8">{{goleador.cantidad}}</th>
+                    <th class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-7">{{goleador.title}}</th>
+                    <th class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-8">{{goleador.body}}</th>
                     <th class="u-border-1 u-border-palette-5-dark-1 u-table-cell u-table-cell-10"></th>
                 </tr>
             </tbody>
@@ -150,7 +150,7 @@
         }, 
         methods: {
             async getGoleadores() {
-                let url = 'http://fixture_qatar_backend.test/api/maximos-goleadores'
+                let url = 'https://jsonplaceholder.typicode.com/posts'
                 await axios.get(url).then(response =>{
                     this.goleadores = response.data.goleadores
                     console.log(this.goleadores)
