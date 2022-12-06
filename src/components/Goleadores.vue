@@ -6,7 +6,8 @@
         <h2 class="u-custom-font u-font-source-sans-pro u-text u-text-1">Maximos Goleadores:</h2>
         <p class="u-text u-text-2">Lista de los maximos goleadores del mundial Qatar 2022
         </p>
-        <img class="u-image u-image-default u-image-1" src="images/360199190.jpg" alt="" data-image-width="720"
+        <img class="u-image u-image-default u-image-1" src="https://cloud10.todocoleccion.online/cromos-futbol/tc/2022/09/09/20/360199190.jpg
+" alt="" data-image-width="720"
             data-image-height="998">
         <div class="u-table u-table-responsive u-table-1">
             <table class="u-table-entity">
@@ -70,7 +71,8 @@
         <div class="u-clearfix u-sheet u-sheet-1">
         <h2 class="u-custom-font u-font-source-sans-pro u-text u-text-1">Maximos Asistidores:</h2>
         <p class="u-text u-text-2">Lista de los maximos asistidores mundial Qatar 2022</p>
-        <img class="u-image u-image-default u-image-1" src="images/360199190.jpg" alt="" data-image-width="720"
+        <img class="u-image u-image-default u-image-1" src="https://cloud10.todocoleccion.online/cromos-futbol/tc/2022/09/09/20/360199190.jpg
+" alt="" data-image-width="720"
             data-image-height="998">
         <div class="u-table u-table-responsive u-table-1">
             <table class="u-table-entity">
@@ -179,7 +181,7 @@
 
 <style scoped>
 table tr:nth-child(2) {
-    background-color: rgba(3, 89, 195, 0.851);
+    background-color: rgba(17, 174, 0, 0.852);
 }
 table tr:nth-child(3) {
 
