@@ -2,8 +2,8 @@
   <div>
     <nav v-if="login == null" class="navbar navbar-expand-lg mt-2">
         <div class="position-absolute top-0 end-0">
-          <router-link class="btn btn-outline-danger me-2" to="login">Iniciar sesión</router-link>
-          <router-link class="btn btn-outline-danger" to="sign-up">Registrarse</router-link>
+          <router-link class="btn btn-danger me-2" to="login">Iniciar sesión</router-link>
+          <router-link class="btn btn-danger" to="sign-up">Registrarse</router-link>
         </div>
     </nav>
   </div>
