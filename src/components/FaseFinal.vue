@@ -19,8 +19,8 @@
                         <td>3</td>
                         <td>0</td>
                         <td colspan="18"></td>
-                        <td>#</td>
-                        <td>#</td>
+                        <td>0</td>
+                        <td>3</td>
                         <!-- INGLATERRA -->
                         <td v-for = "(fase_final) in fase_final.slice(4,5)" :key="fase_final.id">{{fase_final.nombre}}</td>
                     </tr>
@@ -33,7 +33,8 @@
                         <td colspan="12"></td>
                         <td>#</td>
                         <td>#</td>
-                        <td>B1</td>
+                        <!-- INGLATERRA -->
+                        <td v-for = "(fase_final) in fase_final.slice(4,5)" :key="fase_final.id">{{fase_final.nombre}}</td>
                     </tr>
                     <tr>
                         <!-- ESTADOS UNIDOS -->
@@ -41,8 +42,8 @@
                         <td>1</td>
                         <td>0</td>
                         <td colspan="18"></td>
-                        <td>#</td>
-                        <td>#</td>
+                        <td>0</td>
+                        <td>0</td>
                         <!-- SENEGAL -->
                         <td v-for="(fase_final) in fase_final.slice(1,2)" :key="fase_final.id">{{fase_final.nombre}}</td>
                     </tr>
@@ -114,8 +115,8 @@
                     <tr>
                         <!-- JAPÓN -->
                         <td v-for="(fase_final) in fase_final.slice(16,17)" :key="fase_final.id">{{fase_final.nombre}}</td>
-                        <td>#</td>
-                        <td>#</td>
+                        <td>1</td>
+                        <td>1</td>
                         <td colspan="18"></td>
                         <td>#</td>
                         <td>#</td>
@@ -124,7 +125,8 @@
                     </tr>
                     <tr>
                         <td colspan="3"></td>
-                        <td>E1</td>
+                        <!-- CROACIA -->
+                        <td v-for="(fase_final) in fase_final.slice(21,22)" :key="fase_final.id">{{fase_final.nombre}}</td>
                         <td>#</td>
                         <td>#</td>
                         <td colspan="12"></td>
@@ -135,8 +137,8 @@
                     <tr>
                         <!-- CROACIA -->
                         <td v-for="(fase_final) in fase_final.slice(21,22)" :key="fase_final.id">{{fase_final.nombre}}</td>
-                        <td>#</td>
-                        <td>#</td>
+                        <td>1</td>
+                        <td>3</td>
                         <td colspan="18"></td>
                         <td>#</td>
                         <td>#</td>
@@ -162,8 +164,8 @@
                     <tr>
                         <!-- BRASIL -->
                         <td v-for="(fase_final) in fase_final.slice(24,25)" :key="fase_final.id">{{fase_final.nombre}}</td>
-                        <td>#</td>
-                        <td>#</td>
+                        <td>4</td>
+                        <td>0</td>
                         <td colspan="18"></td>
                         <td>#</td>
                         <td>#</td>
@@ -172,7 +174,8 @@
                     </tr>
                     <tr>
                         <td colspan="3"></td>
-                        <td>G1</td>
+                        <!-- BRASIL -->
+                        <td v-for="(fase_final) in fase_final.slice(24,25)" :key="fase_final.id">{{fase_final.nombre}}</td>
                         <td>#</td>
                         <td>#</td>
                         <td colspan="12"></td>
@@ -183,8 +186,8 @@
                     <tr>
                         <!-- COREA DEL SUR -->
                         <td v-for="(fase_final) in fase_final.slice(29,30)" :key="fase_final.id">{{fase_final.nombre}}</td>
-                        <td>#</td>
-                        <td>#</td>
+                        <td>1</td>
+                        <td>0</td>
                         <td colspan="18"></td>
                         <td>#</td>
                         <td>#</td>

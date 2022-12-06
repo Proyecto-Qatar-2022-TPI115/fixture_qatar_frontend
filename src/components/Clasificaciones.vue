@@ -25,7 +25,7 @@
         <th>DG</th>
       </tr>
       <!--<tr v-for="clasificacion in clasificaciones.slice(0,4)" :key="clasificacion.nombre">-->
-      <tr v-for="(clasificacion, index) in clasificaciones.slice(0,4)" :key="clasificacion.nombre">
+      <tr id="base2" v-for="(clasificacion, index) in clasificaciones.slice(0,4)" :key="clasificacion.nombre">
         <th>{{(index+1)}}</th>
         <th>{{clasificacion.nombre}}</th>
         <th>{{clasificacion.puntos}}</th>
@@ -44,7 +44,7 @@
         <th>GC</th>
         <th>DG</th>
       </tr>
-      <tr v-for="(clasificacion, index) in clasificaciones.slice(4,8)" :key="clasificacion.nombre">
+      <tr id="base2" v-for="(clasificacion, index) in clasificaciones.slice(4,8)" :key="clasificacion.nombre">
         <th>{{(index+1)}}</th>
         <th>{{clasificacion.nombre}}</th>
         <th>{{clasificacion.puntos}}</th>
@@ -63,7 +63,7 @@
         <th>GC</th>
         <th>DG</th>
       </tr>        
-      <tr v-for="(clasificacion, index) in clasificaciones.slice(8,12)" :key="clasificacion.nombre">
+      <tr id="base2" v-for="(clasificacion, index) in clasificaciones.slice(8,12)" :key="clasificacion.nombre">
         <th>{{(index+1)}}</th>
         <th>{{clasificacion.nombre}}</th>
         <th>{{clasificacion.puntos}}</th>
@@ -82,7 +82,7 @@
         <th>GC</th>
         <th>DG</th>
       </tr>
-      <tr v-for="(clasificacion, index) in clasificaciones.slice(12,16)" :key="clasificacion.nombre">
+      <tr id="base2" v-for="(clasificacion, index) in clasificaciones.slice(12,16)" :key="clasificacion.nombre">
         <th>{{(index+1)}}</th>
         <th>{{clasificacion.nombre}}</th>
         <th>{{clasificacion.puntos}}</th>
@@ -103,7 +103,7 @@
         <th>GC</th>
         <th>DG</th>
       </tr>
-      <tr v-for="(clasificacion, index) in clasificaciones.slice(16,20)" :key="clasificacion.nombre">
+      <tr id="base2" v-for="(clasificacion, index) in clasificaciones.slice(16,20)" :key="clasificacion.nombre">
         <th>{{(index+1)}}</th>
         <th>{{clasificacion.nombre}}</th>
         <th>{{clasificacion.puntos}}</th>
@@ -122,7 +122,7 @@
         <th>GC</th>
         <th>DG</th>
       </tr>
-      <tr v-for="(clasificacion, index) in clasificaciones.slice(20,24)" :key="clasificacion.nombre">
+      <tr id="base2" v-for="(clasificacion, index) in clasificaciones.slice(20,24)" :key="clasificacion.nombre">
         <th>{{(index+1)}}</th>
         <th>{{clasificacion.nombre}}</th>
         <th>{{clasificacion.puntos}}</th>
@@ -141,7 +141,7 @@
         <th>GC</th>
         <th>DG</th>
       </tr>
-      <tr v-for="(clasificacion, index) in clasificaciones.slice(24,28)" :key="clasificacion.nombre">
+      <tr id="base2" v-for="(clasificacion, index) in clasificaciones.slice(24,28)" :key="clasificacion.nombre">
         <th>{{(index+1)}}</th>
         <th>{{clasificacion.nombre}}</th>
         <th>{{clasificacion.puntos}}</th>
@@ -159,7 +159,7 @@
         <th>GF</th>
         <th>GC</th>
         <th>DG</th>
-      </tr>        <tr v-for="(clasificacion, index) in clasificaciones.slice(28,32)" :key="clasificacion.nombre">
+      </tr>        <tr id="base2" v-for="(clasificacion, index) in clasificaciones.slice(28,32)" :key="clasificacion.nombre">
         <th>{{(index+1)}}</th>
         <th>{{clasificacion.nombre}}</th>
         <th>{{clasificacion.puntos}}</th>
@@ -207,12 +207,12 @@ border-color: #9C254D;
 border-collapse: collapse;
 }
 
-table tr:nth-child(2) {
+#base2:nth-child(2) {
 
 	background-color: rgb(130, 243, 167);
 
 }
-table tr:nth-child(3) {
+#base2:nth-child(3) {
 
 	background-color: rgb(130, 243, 167);
 }
