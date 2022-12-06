@@ -173,13 +173,16 @@
 
     }
 </script>
+<style scoped>
+    @import '../assets/css/Goleadores.css';
+</style>
 
 <style scoped>
 table tr:nth-child(2) {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(3, 89, 195, 0.851);
 }
 table tr:nth-child(3) {
 
-	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.27);
 }
 </style>
