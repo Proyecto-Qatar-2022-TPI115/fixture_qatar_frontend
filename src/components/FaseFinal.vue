@@ -132,7 +132,8 @@
                         <td colspan="12"></td>
                         <td>#</td>
                         <td>#</td>
-                        <td>E2</td>
+                        <!-- MARRUECOS -->
+                        <td v-for="(fase_final) in fase_final.slice(20,21)" :key="fase_final.id">{{fase_final.nombre}}</td>
                     </tr>
                     <tr>
                         <!-- CROACIA -->
