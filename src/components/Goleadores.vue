@@ -54,13 +54,13 @@
         </div>
         
         <img class="u-image u-image-round u-radius-30 u-image-2"
-            src="images/klose-alemania-partido-de-futbol-internacional-amistoso-alemania-paises-bajos-3-0-imtech-arena-de-hamburgo-g7hb18.jpg"
+            src="http://heavy.com/wp-content/uploads/2014/06/miroslavfact3.jpg"
             alt="" data-image-width="918" data-image-height="1390">
-        <img class="u-image u-image-round u-radius-29 u-image-3" src="images/Ronaldo-Luis-Nazario-de-Lima.jpg" alt=""
+        <img class="u-image u-image-round u-radius-29 u-image-3" src="https://media.tycsports.com/files/2020/05/19/99598/ronaldo.jpg" alt=""
             data-image-width="1066" data-image-height="1600">
-        <img class="u-image u-image-round u-radius-29 u-image-4" src="images/E81NfY-XIAUXDg9.jpg" alt=""
+        <img class="u-image u-image-round u-radius-29 u-image-4" src="https://pbs.twimg.com/media/DfvV8X6UEAQNShl.jpg:large" alt=""
             data-image-width="1080" data-image-height="1498">
-        <img class="u-image u-image-round u-radius-30 u-image-5" src="images/a2fd9eb98dced8e6b5d4c957aac4db7e.jpg" alt=""
+        <img class="u-image u-image-round u-radius-30 u-image-5" src="https://i.pinimg.com/originals/a2/fd/9e/a2fd9eb98dced8e6b5d4c957aac4db7e.jpg" alt=""
             data-image-width="918" data-image-height="1230">
         </div>
     </section>
@@ -119,13 +119,13 @@
         </div>
         
         <img class="u-image u-image-round u-radius-30 u-image-2"
-            src="images/klose-alemania-partido-de-futbol-internacional-amistoso-alemania-paises-bajos-3-0-imtech-arena-de-hamburgo-g7hb18.jpg"
+            src="https://static01.nyt.com/images/2020/12/01/opinion/04rotulo-ES-1/01rotulo-01-mobileMasterAt3x.jpg"
             alt="" data-image-width="918" data-image-height="1390">
-        <img class="u-image u-image-round u-radius-29 u-image-3" src="images/Ronaldo-Luis-Nazario-de-Lima.jpg" alt=""
+        <img class="u-image u-image-round u-radius-29 u-image-3" src="https://www.agon-sportsworld.de/media/image/6b/ba/7f/BC2063_600x600.jpg" alt=""
             data-image-width="1066" data-image-height="1600">
-        <img class="u-image u-image-round u-radius-29 u-image-4" src="images/E81NfY-XIAUXDg9.jpg" alt=""
+        <img class="u-image u-image-round u-radius-29 u-image-4" src="https://1.bp.blogspot.com/-TSZoh57AoLo/WsqWYZW68RI/AAAAAAAACG4/BZcTSat76dcOYervGEMoCWjeb59zsbCigCLcBGAs/s1600/3dyb.jpg" alt=""
             data-image-width="1080" data-image-height="1498">
-        <img class="u-image u-image-round u-radius-30 u-image-5" src="images/a2fd9eb98dced8e6b5d4c957aac4db7e.jpg" alt=""
+        <img class="u-image u-image-round u-radius-30 u-image-5" src="https://cdn.vox-cdn.com/thumbor/cEi_rkyKXNRUjDHYgG9lPJtqbhs=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22914936/1345738164.jpg" alt=""
             data-image-width="918" data-image-height="1230">        
         </div>
     </section>
